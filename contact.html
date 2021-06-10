@@ -1,0 +1,138 @@
+/*docent*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/form.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>SuperFit</h1>
+      <p>
+        Wacht niet langer op wat gaat komen - ga erop uit en laat het gebeuren!
+      </p>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Thuis</a>
+      <a href="contact.html" style="color: #f06292; float: right">Contact</a>
+      <a href="inschrijven.php" >Inschrijven</a>
+      <a href="ovzinstructeur.php">Instructeur</a>
+      <a href="managementinfo.php">Management Info</a>
+      <a href="queries.php" style="float: right">Overzichten</a>
+      <a href="registreren.php" style="float: right">Registreer</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card" style="background-color: #cfd8dc">
+          <form action="action_page.php">
+            <div class="container">
+              <h1>Contact</h1>
+              <p>
+                Heeft u een vraag of opmerking? Of heeft u een vraag over een
+                specifieke les? Aarzel dan niet of contact met ons op te nemen.
+              </p>
+              <hr />
+
+              <label for="name"><b>Naam</b></label>
+              <input
+                type="text"
+                placeholder="Wat is uw naam?"
+                name="email"
+                required
+              />
+
+              <label for="email"><b>Email</b></label>
+              <input
+                type="text"
+                placeholder="Wat is uw email adres?"
+                name="email"
+                required
+              />
+
+              <label for="phone"><b>Telefoon</b></label>
+              <input
+                type="text"
+                placeholder="Wat is uw telefoonnummer?"
+                name="phone"
+              />
+
+              <label for="lesson"
+                ><b>Ik heb interesse in de volgende les:</b></label
+              >
+              <select id="lesson">
+                <option value="aerobic">Aerobic Fit</option>
+                <option value="box">Box-Fit</option>
+                <option value="bootcamp">Bootcamp</option>
+                <option value="bodycombat">Body combat</option>
+              </select>
+
+              <label for="subject"><b>Subject</b></label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Wat is uw vraag?"
+                style="height: 170px"
+              ></textarea>
+
+              <label>
+                <input
+                  type="checkbox"
+                  name="accept"
+                  style="margin-bottom: 15px"
+                />
+                Mijn persoonsgegevens worden alleen gebruikt om uw vraag te
+                beantwoorden. Ik ga hiermee akkoord.
+              </label>
+
+              <div class="clearfix">
+                <button type="submit" class="submitbutton">
+                  Stel mijn vraag
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="news instructor"></div>
+          <div class="card-content">
+            <h2>Over mij</h2>
+            <p>
+              Hallo! Ik heet Kees en ik ben inmiddels meer dan 10 jaar
+              sportinstructeur.<br /><br />
+              Ik gebruik mijn ervaring graag om je beter te maken!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Populaire berichten</h3>
+            <div class="news news1">
+              <p>Waar moet je op letten als je een sportschool uitkiest?</p>
+            </div>
+            <div class="news news2">
+              <p>10 voordelen van sporten in een sportschool</p>
+            </div>
+            <div class="news news3">
+              <p>
+                De 2 meest verwachte ‘fouten’ als de sportscholen weer open gaan
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>
+        <span class="emphasize">Nova Fit</span> - De sportschool in Haarlem |
+        Tel: <span class="emphasize">06-12345678</span> | Adres:
+        <span class="emphasize">Sportlaan 1, 1000AA Haarlem</span>
+      </h3>
+    </div>
+  </body>
+</html>
